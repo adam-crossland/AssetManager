@@ -12,6 +12,7 @@ return [
             AssetManager\Resolver\CollectionResolver::class       => AssetManager\Service\CollectionResolverServiceFactory::class,
             AssetManager\Resolver\ConcatResolver::class           => AssetManager\Service\ConcatResolverServiceFactory::class,
             AssetManager\Resolver\AliasPathStackResolver::class   => AssetManager\Service\AliasPathStackResolverServiceFactory::class,
+            AssetManager\Resolver\TranslatePathStackResolver::class   => AssetManager\Service\TranslatePathStackResolverServiceFactory::class,
         ],
         'invokables' => [
             AssetManager\Service\MimeResolver::class => AssetManager\Service\MimeResolver::class,
@@ -30,6 +31,7 @@ return [
             AssetManager\Resolver\CollectionResolver::class       => 2000,
             AssetManager\Resolver\PrioritizedPathsResolver::class => 1500,
             AssetManager\Resolver\AliasPathStackResolver::class   => 1000,
+            AssetManager\Resolver\TranslatePathStackResolver::class => 750,
             AssetManager\Resolver\PathStackResolver::class        => 500,
         ],
         'view_helper'         => [
